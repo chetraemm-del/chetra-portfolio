@@ -145,11 +145,11 @@ function Navbar() {
             ref={logoRef}
             className={`ml-1 sm:ml-4 leading-4 transition-all duration-300 ${currentScrolled > 0 ? "text-white" : ""}`}
           >
-            <span className="merriweather font-bold text-lg sm:text-[22px]">
+            <span className="merriweather font-bold text-[15px] sm:text-[22px]">
               Chetra
             </span>
             <br />{" "}
-            <span className="text-xs sm:text-sm ml-6 sm:ml-10 roboto-condensed">
+            <span className="text-[10px] sm:text-sm ml-6 sm:ml-10 roboto-condensed">
               Portfolio
             </span>
           </div>
@@ -186,7 +186,7 @@ function Navbar() {
               </div>
             ))}
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2">
             <div ref={buttonRef}>
               <button
                 className={`border px-3 sm:px-4 py-1.5 sm:py-2 rounded-full roboto-condensed flex items-center gap-1.5 sm:gap-2 text-sm sm:text-base whitespace-nowrap transition-all duration-300 ease-out hover:-translate-y-0.5 active:scale-95 active:translate-y-0 ${currentScrolled > 0 ? "border-white text-white bg-black/60 backdrop-blur-md hover:bg-white hover:text-black hover:border-white" : "border-black text-black bg-transparent hover:bg-black hover:text-white hover:border-black"}`}
@@ -199,7 +199,7 @@ function Navbar() {
                 className={`cursor-pointer ${currentScrolled > 0 ? "text-white" : ""}`}
                 onClick={toggleMenu}
               >
-                <svg width="35" height="35" viewBox="0 0 40 40">
+                <svg width="33" height="33" viewBox="0 0 40 40">
                   <line
                     ref={topLine}
                     x1="10"
