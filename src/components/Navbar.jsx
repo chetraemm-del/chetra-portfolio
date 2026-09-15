@@ -140,7 +140,7 @@ function Navbar() {
         ref={navRef}
         className={`w-full transition-all duration-300 rounded-full py-2 sm:py-3 px-2 sm:px-4 ${currentScrolled > 0 ? "bg-black/60 backdrop-blur-md " : ""}`}
       >
-        <nav className="flex sm:justify-between items-center gap-17 sm:gap-3">
+        <nav className="flex sm:justify-between items-center gap-21 sm:gap-3">
           <div
             ref={logoRef}
             className={`ml-1 sm:ml-4 leading-4 transition-all duration-300 ${currentScrolled > 0 ? "text-white" : ""}`}
