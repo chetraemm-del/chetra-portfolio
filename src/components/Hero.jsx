@@ -107,7 +107,7 @@ function Hero() {
   });
   return (
     <div id="home" className=" h-screen w-full bg-white bg-[radial-gradient(#bfdbfe_1px,transparent_1px)] bg-size-[16px_16px] ">
-      <div className="flex flex-wrap md:mt-20 lg:mt-20 mt-35 items-center justify-between ml-30">
+      <div className="flex flex-wrap md:mt-20 lg:mt-20 mt-35 items-center justify-between ml-15 sm:ml-30">
         <div className="flex flex-col">
           <h1 ref={fullNameRef} className="mb-4 leading-13">
             <span className="font-semibold momo-trust-display-regular text-2xl sm:text-3xl md:text-5xl lg:text-5xl">
