@@ -21,6 +21,7 @@ function App() {
           <Navbar />
           <Hero />
           {/* <About/> */}
+          <div className="h-screen"></div>
         </div>
       )}
     </div>
