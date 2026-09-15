@@ -1,4 +1,5 @@
 import React from "react";
+import { FiArrowUpRight } from "react-icons/fi";
 
 function About() {
   return (
@@ -32,7 +33,7 @@ function About() {
                 learning Java and Spring Boot while building projects to improve
                 my skills and explore new technologies. <br />I enjoy solving
                 problems, turning ideas into real applications, and continuously
-                learning through hands-on experience.
+                learning through hands-on experience. <br /> <button className="bg-white px-3 py-1 text-black mt-2 rounded-2xl flex items-center hover:bg-black hover:text-white transition-all duration-300 cursor-pointer active:scale-50">Get My Cv <FiArrowUpRight/></button>
               </h1>
               </div>
             </div>
