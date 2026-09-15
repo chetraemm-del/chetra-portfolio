@@ -106,7 +106,7 @@ function Hero() {
     };
   });
   return (
-    <div id="home" className=" h-screen w-full bg-white bg-[radial-gradient(#bfdbfe_1px,transparent_1px)] bg-size-[16px_16px] ">
+    <div id="home" className=" h-screen w-full bg-white bg-[radial-gradient(#bfdbfe_1px,transparent_1px)] bg-size-[16px_16px] mb-5 ">
       <div className="flex flex-wrap md:mt-20 lg:mt-20 mt-35 items-center justify-between ml-15 sm:ml-30">
         <div className="flex flex-col">
           <h1 ref={fullNameRef} className="mb-4 leading-13">
@@ -155,7 +155,7 @@ function Hero() {
           />
 
           {/* Shadow */}
-          <div className="absolute -bottom-25 left-1/2 -translate-x-1/2 w-full h-12 bg-gray-600/60 rounded-[50%] blur-xl -z-10"></div>
+          <div className="absolute -bottom-22 left-1/2 -translate-x-1/2 w-full h-12 bg-gray-600/60 rounded-[50%] blur-xl -z-10"></div>
         </div>
       </div>
     </div>

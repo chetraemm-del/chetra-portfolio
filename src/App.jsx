@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Loading from "./components/Loading";
-// import About from "./components/About";
+import About from "./components/About";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -20,8 +20,8 @@ function App() {
         <div>
           <Navbar />
           <Hero />
-          {/* <About/> */}
-          <div className="h-screen"></div>
+          <About/>
+          <div id="skill" className="h-screen">hello</div>
         </div>
       )}
     </div>
