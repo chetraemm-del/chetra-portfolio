@@ -110,16 +110,16 @@ function Hero() {
       <div className="flex flex-wrap md:mt-20 lg:mt-20 mt-35 items-center justify-between ml-30">
         <div className="flex flex-col">
           <h1 ref={fullNameRef} className="mb-4 leading-13">
-            <span className="font-semibold momo-trust-display-regular text-xl sm:text-3xl md:text-5xl lg:text-5xl">
+            <span className="font-semibold momo-trust-display-regular text-2xl sm:text-3xl md:text-5xl lg:text-5xl">
               Hi 👋, I'm
             </span>
 
             <span
               ref={nameRef}
-              className="font-bold bungee-tint-regular text-xl sm:text-3xl lg:text-6xl md:text-6xl"
+              className="font-bold bungee-tint-regular text-3xl sm:text-4xl lg:text-6xl md:text-6xl"
             ></span>
           </h1>
-          <h1 ref={fullMajorRef} className="momo-trust-display-regular text-xl md:text-2xl lg:text-2xl mb-4 text-gray-700">
+          <h1 ref={fullMajorRef} className="momo-trust-display-regular text-[16px] sm:text-xl md:text-2xl lg:text-2xl mb-4 text-gray-700">
             I am a <span ref={majorRef}>Full-Stack Developer</span>{" "}
           </h1>
           <p ref={paraRef} className="text-gray-500 md:text-sm text-[10px] oboto-condensed">
