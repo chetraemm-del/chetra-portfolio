@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Momo+Trust+Display&family=Outfit:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+.kantumruy-pro {
+  font-family: "Kantumruy Pro", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.merriweather {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.roboto-condensed {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.momo-trust-display-regular {
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.bungee-tint-regular {
+  font-family: "Bungee Tint", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+.menu-border {
+  stroke-dasharray: 280;
+  stroke-dashoffset: 280;
+  transition: stroke-dashoffset 0.6s ease;
+}
+
+.menu-item:hover .menu-border,
+.menu-item.active .menu-border {
+  stroke-dashoffset: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
