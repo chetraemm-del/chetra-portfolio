@@ -109,7 +109,7 @@ function About() {
           <div className="absolute inset-0 bg-black/10"></div>
 
           {/* Content */}
-          <div className="absolute inset-0 flex flex-wrap md:gap-8 lg:gap-25 left-15 right-20 lg:right-5 sm:top-10 top-3">
+          <div className="absolute inset-0 flex flex-wrap md:gap-8 lg:gap-25 left-15 right-20 lg:right-5 sm:top-10 top-15">
             <div ref={imgRef} className="sm:mt-11">
               <img
                 className="lg:w-60 lg:h-90 md:w-50 md:h-80 sm:w-50 object-cover rounded-xl border"
@@ -118,7 +118,7 @@ function About() {
               />
             </div>
 
-            <div ref={paraRef} className="text-white flex-col">
+            <div ref={paraRef} className="text-white flex-col sm:mb-0 mb-13">
               <h1 className="lg:text-4xl md:text-3xl sm:text-2xl font-bold bungee-tint-regular">
                 About Me
               </h1>
