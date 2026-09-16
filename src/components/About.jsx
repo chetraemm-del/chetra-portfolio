@@ -100,7 +100,7 @@ function About() {
                   <br />
 
                   <button className="bg-white px-3 py-1 text-black mt-2 rounded-2xl flex items-center border hover:bg-black hover:text-white transition-all duration-300 cursor-pointer active:scale-90">
-                    Get My Cv <FiArrowUpRight />
+                    <a href="/Chhum-Chetra-CV-03.pdf" target="_blank" rel="noopener noreferrer">View My CV</a> <FiArrowUpRight />
                   </button>
                 </h1>
               </div>
