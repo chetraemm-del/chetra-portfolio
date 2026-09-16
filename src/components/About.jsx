@@ -40,7 +40,7 @@ function About() {
   });
 
   return (
-    <div id="about" className="h-screen w-full mb-40 mt-5">
+    <div  id="about" className="h-screen w-full mb-40 mt-5">
       <section className="md:px-22 px-10 pb-20 pt-8">
 
         <h1

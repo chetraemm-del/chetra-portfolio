@@ -105,28 +105,28 @@ function Navbar() {
     tl.from(logoRef.current, {
       y: -30,
       opacity: 0,
-      duration: 1,
+      duration: 0.6,
     })
       .from(
         menuRef.current,
         {
           y: -30,
           opacity: 0,
-          duration: 1,
+          duration: 0.8,
         },
         "-=0.3",
       )
       .from(buttonRef.current, {
         y: -30,
         opacity: 0,
-        duration: 1,
+        duration: 0.6,
       })
       .from(
         menuBtnRef.current,
         {
           y: -30,
           opacity: 0,
-          duration: 1,
+          duration: 0.7,
         },
         "-=0.3",
       );
