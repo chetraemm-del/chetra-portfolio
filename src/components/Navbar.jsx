@@ -236,7 +236,7 @@ function Navbar() {
         </nav>
       </header>
       <nav
-        className={`absolute md:hidden lg:hidden bg-black mt-2 py-5 w-30 rounded-2xl transition-all duration-700 ${menuOpen ? "right-20" : "-right-200"}`}
+        className={`absolute md:hidden lg:hidden bg-black/60 backdrop-blur-md mt-2 py-5 w-30 rounded-2xl transition-all duration-700 ${menuOpen ? "right-0" : "-right-200"}`}
       >
         <div className="flex flex-col items-center">
           {navSection.map((item) => (
