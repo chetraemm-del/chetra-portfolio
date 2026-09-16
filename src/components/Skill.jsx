@@ -6,7 +6,7 @@ function Skill() {
       <div className="flex justify-center">
         <div className="h-px w-[90%] bg-gray-600"></div>
       </div>
-      <div className="mx-16.5 mt-10">
+      <div className="lg:mx-16.5 md:mx-12 sm:mx-10 mt-10 mx-7">
         <h1 className="mb-1 font-semibold momo-trust-display-regular text-[10px] sm:text-[13px] text-gray-400 ">
           Now, let’s get technical.
         </h1>
