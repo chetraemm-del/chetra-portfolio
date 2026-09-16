@@ -290,7 +290,7 @@ function Skill() {
   return (
     <div
       id="skill"
-      className="min-h-screen bg-black text-white overflow-hidden "
+      className="min-h-screen bg-black text-white  "
     >
       <div className="flex justify-center">
         <div className="h-px w-[90%] bg-gray-600"></div>
@@ -311,7 +311,7 @@ function Skill() {
           ref={hRef}
           className="skill-items lg:text-3xl md:text-2xl sm:text-xl font-bold bungee-tint-regular mt-10"
         >
-          My skill
+          My skills
         </h1>
         <div className="mt-6">
           <h1 className="skill-items mb-1 font-semibold momo-trust-display-regular text-[10px] sm:text-[13px] text-gray-400 ">

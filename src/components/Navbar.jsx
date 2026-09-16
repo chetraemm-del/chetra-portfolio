@@ -17,7 +17,6 @@ function Navbar() {
   const menuRef = useRef(null);
   const buttonRef = useRef(null);
   const menuBtnRef = useRef(null);
-  const [activeMenu, setActiveMenu] = useState("Home");
   const topLine = useRef(null);
   const midLine = useRef(null);
   const bottomLine = useRef(null);
@@ -159,9 +158,9 @@ function Navbar() {
           >
             {navSection.map((item) => (
               <div
-                onClick={() => setActiveMenu(item)}
+               
                 key={item}
-                className={`menu-item ${activeMenu === item ? "active" : ""} cursor-pointer transition-all duration-300 ease-out relative px-2 py-1 rounded-full hover:-translate-y-0.5 hover:text-black active:scale-95 ${currentScrolled > 0 ? "text-white hover:text-white" : "text-black"}`}
+                className={`menu-item cursor-pointer transition-all duration-300 ease-out relative px-2 py-1 rounded-full hover:-translate-y-0.5 hover:text-black active:scale-95 ${currentScrolled > 0 ? "text-white hover:text-white" : "text-black"}`}
               >
                  <a href={`#${item.toLowerCase()}`}>
       {item}
@@ -242,12 +241,12 @@ function Navbar() {
           {navSection.map((item) => (
             <div
               onClick={() => {
-                setActiveMenu(item);
+                
                 setMenuOpen(false);
                 menuAnimation.current?.reverse();
               }}
               key={item}
-              className={`menu-item text-white  mt-2 mb-2 ${activeMenu === item ? "active" : ""} cursor-pointer transition-all duration-300 ease-out relative px-2  rounded-full hover:-translate-y-0.5  active:scale-95 text-[10px]`}
+              className={`menu-item text-white  mt-3 mb-3 cursor-pointer transition-all duration-300 ease-out relative px-2  rounded-full hover:-translate-y-0.5  active:scale-95 text-[10px]`}
             >
               <a href={`#${item.toLowerCase()}`}>{item}</a>
 
