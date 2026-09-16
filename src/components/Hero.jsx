@@ -146,7 +146,7 @@ function Hero() {
         </div>
         <div
           ref={imageRef}
-          className="relative isolate md:w-70 md:h-80 lg:w-80 lg:h-100 w-70 h-80 me-35 mt-20 border-4 border-gray-700 rounded-2xl"
+          className="relative isolate md:w-70 md:h-80 lg:w-80 lg:h-100 w-80 h-80 me-35 mt-20 border-4 border-gray-700 rounded-2xl"
         >
           <img
             className="relative z-10 w-full h-full  object-cover rounded-xl"
