@@ -137,7 +137,7 @@ function About() {
                   applications, and continuously learning through hands-on
                   experience.
                   <br />
-                  <button className="bg-white px-5 py-3 lg:text-[13px] md:text-[10px] text-[8px] sm:text-[9px] text-black mt-2 rounded-2xl flex items-center border hover:bg-black hover:text-white transition-all duration-300 cursor-pointer active:scale-90">
+                  <button className="bg-black/40 px-5 py-3 lg:text-[13px] md:text-[10px] text-[8px] sm:text-[9px] text-gray-200 mt-2 rounded-2xl flex items-center border hover:bg-black hover:text-white transition-all duration-300 cursor-pointer active:scale-90">
                     <a
                       href="/Chhum-Chetra-CV-03.pdf"
                       target="_blank"
