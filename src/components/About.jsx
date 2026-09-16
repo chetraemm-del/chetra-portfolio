@@ -6,8 +6,8 @@ function About() {
     <div id="about" className="h-screen w-full mb-40 mt-5">
       
       <section className="md:px-22 px-10 pb-20 pt-8">
-        <h1 className="mb-1 font-semibold momo-trust-display-regular text-[13px] text-gray-600">THE PERSON BEHIND THE PROJECTS</h1>
-        <p className="momo-trust-display-regular text-[10px] text-gray-400 mb-8">A passionate developer who enjoys solving problems, exploring new
+        <h1 className="mb-1 font-semibold momo-trust-display-regular text-[10px] sm:text-[13px] text-gray-600">THE PERSON BEHIND THE PROJECTS</h1>
+        <p className="momo-trust-display-regular text-[8px] sm:text-[10px] text-gray-400 mb-8">A passionate developer who enjoys solving problems, exploring new
 technologies, <br /> and turning ideas into clean and meaningful projects.</p>
         <div className="relative mx-auto w-8xl h-140  rounded-3xl">
           <img
