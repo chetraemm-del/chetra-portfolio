@@ -47,20 +47,19 @@ function About() {
       const finalScale = Math.max(scaleX, scaleY);
 
       gsap.to(clip, {
-        scale: finalScale,
-        borderRadius: 0,
-        ease: "none",
+  scale: finalScale,
+  borderRadius: 0,
+  ease: "none",
 
-        scrollTrigger: {
-          trigger: clip,
-          start: "center center",
-          end: "+=700",
-          scrub: 1,
-
-          pin: true,
-          pinSpacing: true,
-        },
-      });
+  scrollTrigger: {
+    trigger: clip,
+    start: "center center",
+    end: "+=450",
+    scrub: true,
+    pin: true,
+    pinSpacing: true,
+  },
+});
     },
     { scope: aboutRef },
   );
@@ -104,21 +103,22 @@ function About() {
             src="img/aboutme2.jpg"
             alt=""
           />
-
-          {/* Overlay */}
           <div className="absolute inset-0 bg-black/10"></div>
-
-          {/* Content */}
-          <div className="absolute inset-0 flex flex-wrap md:gap-8 lg:gap-25 left-15 right-20 lg:right-5 sm:top-10 top-15">
-            <div ref={imgRef} className="sm:mt-11">
+          <div className="absolute inset-0 flex flex-wrap md:gap-8 lg:gap-25 left-15 right-20 lg:right-5 sm:top-10 top-10">
+            <div ref={imgRef} className="sm:mt-11 lg:w-60 lg:h-90 md:w-50 md:h-80 sm:w-50 bg-white rounded-t-2xl border-white border-2">
               <img
-                className="lg:w-60 lg:h-90 md:w-50 md:h-80 sm:w-50 object-cover rounded-xl border"
-                src="https://i.pinimg.com/originals/77/4c/55/774c5558b11c5dc4884429f7f5c7c6f7.jpg?nii=t"
+                className=" object-cover rounded-t-2xl h-[90%] w-full "
+                src="img/profile2.jpg"
                 alt="Chetra"
               />
+              <div className="flex items-center justify-between mx-2 sm:mx-4 mt-1">
+                <h2 className="syne-tactile-regular md:text-[16px] sm:text-[13px] text-[8px]">Chhum Chetra</h2>
+              <h2 className="syne-tactile-regular md:text-[13px] sm:text-[10px] text-[6px]">Chhuy</h2>
+              </div>
+               
             </div>
 
-            <div ref={paraRef} className="text-white flex-col sm:mb-0 mb-13">
+            <div ref={paraRef} className="text-white sm:mt-0 mt-3 flex-col sm:mb-0 mb-13">
               <h1 className="lg:text-4xl md:text-3xl sm:text-2xl font-bold bungee-tint-regular">
                 About Me
               </h1>
@@ -137,7 +137,7 @@ function About() {
                   applications, and continuously learning through hands-on
                   experience.
                   <br />
-                  <button className="bg-white px-3 py-1 text-black mt-2 rounded-2xl flex items-center border hover:bg-black hover:text-white transition-all duration-300 cursor-pointer active:scale-90">
+                  <button className="bg-white px-5 py-3 lg:text-[13px] md:text-[10px] text-[8px] sm:text-[9px] text-black mt-2 rounded-2xl flex items-center border hover:bg-black hover:text-white transition-all duration-300 cursor-pointer active:scale-90">
                     <a
                       href="/Chhum-Chetra-CV-03.pdf"
                       target="_blank"

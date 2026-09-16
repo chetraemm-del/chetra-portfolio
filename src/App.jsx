@@ -22,7 +22,7 @@ function App() {
           <Navbar />
           <Hero />
           <About/>
-          <div className=" h-20 bg-black"></div>
+          <div className=" h-30 bg-black"></div>
           <Skill/>
         </div>
       )}
