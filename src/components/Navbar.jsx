@@ -247,9 +247,9 @@ function Navbar() {
                 menuAnimation.current?.reverse();
               }}
               key={item}
-              className={`menu-item text-white  mt-6 mb-6 ${activeMenu === item ? "active" : ""} cursor-pointer transition-all duration-300 ease-out relative px-2 py-1 rounded-full hover:-translate-y-0.5  active:scale-95 text-[10px]`}
+              className={`menu-item text-white  mt-2 mb-2 ${activeMenu === item ? "active" : ""} cursor-pointer transition-all duration-300 ease-out relative px-2  rounded-full hover:-translate-y-0.5  active:scale-95 text-[10px]`}
             >
-              {item}
+              <a href={`#${item.toLowerCase()}`}>{item}</a>
 
               <svg
                 className="absolute inset-0 w-full h-full pointer-events-none"
