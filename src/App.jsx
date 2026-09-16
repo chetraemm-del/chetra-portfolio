@@ -22,6 +22,7 @@ function App() {
           <Navbar />
           <Hero />
           <About/>
+          <div className=" h-20 bg-black"></div>
           <Skill/>
         </div>
       )}
