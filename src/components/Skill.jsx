@@ -143,6 +143,100 @@ function Skill() {
         "A cloud platform used to deploy and host web applications, especially React and Next.js projects.",
     },
   ];
+  const techStack = [
+    // Frontend
+    SiHtml5,
+    SiCss,
+    SiJavascript,
+    SiReact,
+    SiTailwindcss,
+    SiNextdotjs,
+    SiTypescript,
+
+    // Backend
+    SiNodedotjs,
+    SiExpress,
+    FaJava,
+    SiSpringboot,
+
+    // Database
+    SiMongodb,
+    SiMysql,
+
+    // Tools
+    FaGitAlt,
+    SiGithub,
+    VscVscode,
+    SiDocker,
+    SiVercel,
+    SiHtml5,
+    SiCss,
+    SiJavascript,
+    SiReact,
+    SiTailwindcss,
+    SiNextdotjs,
+    SiTypescript,
+
+    // Backend
+    SiNodedotjs,
+    SiExpress,
+    FaJava,
+    SiSpringboot,
+
+    // Database
+    SiMongodb,
+    SiMysql,
+
+    // Tools
+    FaGitAlt,
+  ];
+  const techStack2 = [
+    // Frontend
+    SiHtml5,
+    SiCss,
+    SiJavascript,
+    SiReact,
+    SiTailwindcss,
+    SiNextdotjs,
+    SiTypescript,
+
+    // Backend
+    SiNodedotjs,
+    SiExpress,
+    FaJava,
+    SiSpringboot,
+
+    // Database
+    SiMongodb,
+    SiMysql,
+
+    // Tools
+    FaGitAlt,
+    SiGithub,
+    VscVscode,
+    SiDocker,
+    SiVercel,
+    SiHtml5,
+    SiCss,
+    SiJavascript,
+    SiReact,
+    SiTailwindcss,
+    SiNextdotjs,
+    SiTypescript,
+
+    // Backend
+    SiNodedotjs,
+    SiExpress,
+    FaJava,
+    SiSpringboot,
+
+    // Database
+    SiMongodb,
+    SiMysql,
+
+    // Tools
+    FaGitAlt,
+  ];
 
   const hRef = useRef(null);
 
@@ -172,8 +266,32 @@ function Skill() {
   });
   const [selectedTech, setSelectedTech] = useState(null);
   const SelectedIcon = selectedTech?.icon;
+  const scrollRef = useRef(null);
+  const tweenRef = useRef(null);
+  useGSAP(
+    () => {
+      tweenRef.current = gsap.to(scrollRef.current, {
+        xPercent: -50,
+        ease: "none",
+        duration: 15,
+        repeat: -1,
+      });
+    },
+    { scope: scrollRef },
+  );
+
+  const handleMouseEnter = () => {
+    tweenRef.current.pause();
+  };
+
+  const handleMouseLeave = () => {
+    tweenRef.current.play();
+  };
   return (
-    <div id="skill" className="min-h-screen bg-black text-white ">
+    <div
+      id="skill"
+      className="min-h-screen bg-black text-white overflow-hidden "
+    >
       <div className="flex justify-center">
         <div className="h-px w-[90%] bg-gray-600"></div>
       </div>
@@ -281,6 +399,17 @@ function Skill() {
                 </div>
               );
             })}
+          </div>
+        </div>
+        <div
+          className="w-full overflow-hidden mt-15 cursor-pointer h-15 "
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
+          <div ref={scrollRef} className="flex gap-4 w-max">
+            {[...techStack, ...techStack2].map((Icon, idx) => (
+              <Icon className="sm:text-xl text-[16px] hover:scale-150 transition-all duration-200 mt-3" />
+            ))}
           </div>
         </div>
         {selectedTech && (
