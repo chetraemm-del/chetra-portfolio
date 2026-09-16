@@ -104,7 +104,7 @@ function About() {
             alt=""
           />
           <div className="absolute inset-0 bg-black/10"></div>
-          <div className="absolute inset-0 flex flex-wrap md:gap-8 lg:gap-25 left-15 right-20 lg:right-5 sm:top-10 top-10">
+          <div className="absolute inset-0 flex flex-wrap md:gap-8 lg:gap-25 left-15 right-20 lg:right-5 sm:top-10 top-7">
             <div ref={imgRef} className="sm:mt-11 lg:w-60 lg:h-90 md:w-50 md:h-80 sm:w-50 bg-white rounded-t-2xl border-white border-2">
               <img
                 className=" object-cover rounded-t-2xl h-[90%] w-full "
