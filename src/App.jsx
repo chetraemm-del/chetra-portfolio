@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Loading from "./components/Loading";
 import About from "./components/About";
+import Skill from "./components/Skill";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -21,7 +22,7 @@ function App() {
           <Navbar />
           <Hero />
           <About/>
-          <div id="skill" className="h-screen">hello</div>
+          <Skill/>
         </div>
       )}
     </div>
