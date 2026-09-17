@@ -8,6 +8,7 @@ import {
   SiExpress,
   SiGit,
   SiGithub,
+  SiGsap,
   SiHtml5,
   SiJavascript,
   SiMongodb,
@@ -66,6 +67,12 @@ function Skill() {
       icon: SiTypescript,
       description:
         "A JavaScript superset that adds static types to make code safer and easier to maintain.",
+    },
+    {
+      name: "Gsap",
+      icon: SiGsap,
+      description:
+        "GSAP (GreenSock Animation Platform) is a JavaScript library used to create animations on websites.",
     },
   ];
 
@@ -152,6 +159,7 @@ function Skill() {
     SiTailwindcss,
     SiNextdotjs,
     SiTypescript,
+    SiGsap,
 
     // Backend
     SiNodedotjs,
@@ -187,8 +195,6 @@ function Skill() {
     SiMongodb,
     SiMysql,
 
-    // Tools
-    FaGitAlt,
   ];
   const techStack2 = [
     // Frontend
@@ -199,7 +205,7 @@ function Skill() {
     SiTailwindcss,
     SiNextdotjs,
     SiTypescript,
-
+    SiGsap,
     // Backend
     SiNodedotjs,
     SiExpress,
@@ -234,8 +240,6 @@ function Skill() {
     SiMongodb,
     SiMysql,
 
-    // Tools
-    FaGitAlt,
   ];
 
   const hRef = useRef(null);

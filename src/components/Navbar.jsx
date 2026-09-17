@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import { FiMail } from "react-icons/fi";
-import { Link } from "react-router-dom";
 import gsap from "gsap";
 import { useWindowScroll } from "react-use";
 import { useGSAP } from "@gsap/react";
@@ -162,9 +161,7 @@ function Navbar() {
                 key={item}
                 className={`menu-item cursor-pointer transition-all duration-300 ease-out relative px-2 py-1 rounded-full hover:-translate-y-0.5 hover:text-black active:scale-95 ${currentScrolled > 0 ? "text-white hover:text-white" : "text-black"}`}
               >
-                 <a href={`#${item.toLowerCase()}`}>
-      {item}
-    </a>
+                 <a href={`/#${item.toLowerCase()}`}>{item}</a>
 
                 <svg
                   className="absolute inset-0 w-full h-full pointer-events-none"
@@ -248,7 +245,7 @@ function Navbar() {
               key={item}
               className={`menu-item text-white  mt-3 mb-3 cursor-pointer transition-all duration-300 ease-out relative px-2  rounded-full hover:-translate-y-0.5  active:scale-95 text-[10px]`}
             >
-              <a href={`#${item.toLowerCase()}`}>{item}</a>
+              <a href={`/#${item.toLowerCase()}`}>{item}</a>
 
               <svg
                 className="absolute inset-0 w-full h-full pointer-events-none"
