@@ -57,4 +57,18 @@ export const projects = [
       category : 'fullStack',
       techStack : [{name : 'HTML', icon : SiHtml5},{name : 'CSS', icon : SiCss},{name : 'JavaScript', icon : SiJavascript},{name : 'React', icon : SiReact},{name : 'Tailwind', icon : SiTailwindcss},{name : 'Node.js', icon : SiNodedotjs},{name : 'Express.js', icon : SiExpress},{name : 'MongoDB', icon : SiMongodb}]
   },
+  {
+    id: 5,
+    title: "BookHub POS System",
+    imgPoster: "img/project5/poster5.jpg",
+    description:
+      "This project is a full-stack Point of Sale (POS) system designed to help manage sales, purchases, products, and business operations. It includes a dashboard for viewing sales-related data and provides management sections for customers, suppliers, categories, products, purchases, sales, users, sales reports, and stock reports. The system allows users to purchase products from suppliers, manage inventory, sell products to customers, and generate invoices for completed sales. It combines frontend and backend functionality to create a more complete and practical business management experience.",
+    projectReflection:
+      "This was my first full-stack project, and it helped me develop a stronger understanding of backend development and how different parts of an application work together. Through this project, I learned how to use Node.js and Express.js to build backend applications, organize routes and controllers, and connect the application to MongoDB. I also learned how to create models and schemas to structure data and manage database collections. In addition, I gained practical experience working with REST APIs and HTTP methods such as GET, POST, PUT, PATCH, and DELETE. I used Postman to test API endpoints, check request and response data, and identify problems during development. This project also helped me understand the relationship between the frontend, backend, and database in a full-stack application. Building features such as product management, purchasing, sales, inventory, and invoices gave me valuable experience in developing a system with real-world business functionality.",
+      imgDetail : ['/img/project4/poster4.png','/img/project4/img4-1.png','/img/project4/img4-3.png','/img/project4/img4-7.png','/img/project4/img4-8.png','/img/project4/img4-9.png','/img/project4/img4-10.png','/img/project4/img4-11.png','/img/project4/img4-12.png','/img/project4/img4-13.png','/img/project4/img4-15.png','/img/project4/img4-16.png',
+      ],
+      code : 'https://github.com/chetraemm-del/html-project',
+      category : 'fullStack',
+      techStack : [{name : 'HTML', icon : SiHtml5},{name : 'CSS', icon : SiCss},{name : 'JavaScript', icon : SiJavascript},{name : 'React', icon : SiReact},{name : 'Tailwind', icon : SiTailwindcss},{name : 'Node.js', icon : SiNodedotjs},{name : 'Express.js', icon : SiExpress},{name : 'MongoDB', icon : SiMongodb}]
+  },
 ];

@@ -7,6 +7,7 @@ import Skill from "./components/Skill";
 import Project from "./components/Project";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import ProjectDetail from "./components/ProjectDetail";
+import Education from "./components/Education";
 
 const MainLayout = () => (
   <>
@@ -23,6 +24,9 @@ const MainLayout = () => (
 
       <section id="project">
         <Project />
+      </section>
+      <section id="education">
+        <Education />
       </section>
     </main>
   </>

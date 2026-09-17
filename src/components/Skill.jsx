@@ -256,7 +256,7 @@ function Skill() {
       {
         opacity: 1,
         yPercent: 0,
-        duration: 0.5,
+        duration: 0.3,
         stagger: 0.15,
         ease: "power2.out",
 
