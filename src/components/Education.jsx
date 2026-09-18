@@ -3,101 +3,121 @@ import React from "react";
 
 function Education() {
   return (
-    <div className="bg-black h-screen">
-      <div className="h-24 mt-10"></div>
-
+    <section className="bg-black min-h-screen py-24">
       <div className="lg:mx-16.5 md:mx-12 sm:mx-10 mx-7">
-        <h1 className="mb-1 font-semibold momo-trust-display-regular text-[10px] sm:text-[13px] text-white">
-          Where I’m building my foundation.
-        </h1>
 
-        <p className="momo-trust-display-regular text-[7px] sm:text-[10px] text-gray-600 mb-8">
-          My academic journey has helped me develop a strong foundation in
-          technology, problem solving,
-          <br />
-          and software development. I continue to expand my knowledge through
-          university studies and hands-on projects.
-        </p>
+       
+        <div className="mb-8">
+          <h1 className="mb-2 font-semibold momo-trust-display-regular text-[10px] sm:text-[13px] text-white">
+            Where I’m building my foundation.
+          </h1>
 
-        <div className="w-full bg-white/85 h-95 relative rounded-2xl">
-          <div
-            className="
-              absolute
-              top-10
-              left-10
-              right-10
-              md:left-16
-              md:right-16
-              lg:left-27
-              lg:right-10
-              flex
-              lg:flex-row
-              flex-col
-              justify-between
-              items-center
-            "
-          >
-            <div className="flex lg:flex-col gap-13">
-              <h1 className="lg:text-xl md:text-[15px] text-[13px] font-bold bungee-tint-regular">
-                projects
+          <p className="momo-trust-display-regular text-[7px] sm:text-[10px] text-gray-600 leading-relaxed max-w-2xl">
+            My academic journey has helped me develop a strong foundation in
+            technology, problem solving, and software development. I continue
+            to expand my knowledge through university studies and hands-on
+            projects.
+          </p>
+        </div>
+
+        <div className="w-full bg-white/90 rounded-2xl p-7 sm:p-10 md:p-12 lg:p-14">
+
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
+            <div>
+              <h1 className="text-xl md:text-2xl font-bold bungee-tint-regular mb-8">
+                Projects
               </h1>
 
-              <div className="flex lg:flex-row flex-col items-center gap-5 lg:gap-8">
-                <div className="lg:h-60 bg-gray-500 h-0.5 sm:w-60 w-30 lg:w-0.5"></div>
+              <div className="relative">
 
-                <div className="mb-10">
-                  <div>
-                    <h1 className="momo-trust-display-regular font-semibold lg:text-[16px] md:text-[11px] text-[9px]">
-                      Royal University of Phnom Penh (RUPP)
-                    </h1>
+                <div className="absolute left-[5px] top-2 bottom-2 w-[2px] bg-gray-400"></div>
 
-                    <p className="text-gray-700 lg:text-[14px] md:text-[9px] text-[7px]">
-                      Information Technology
-                    </p>
+                <div className="relative pl-8 mb-10">
 
-                    <p className="text-gray-700 lg:text-[14px] md:text-[9px] text-[7px]">
-                      2025 – Present
-                    </p>
-                  </div>
+                  <div className="absolute left-0 top-1 w-3 h-3 rounded-full bg-black"></div>
 
-                  <div className="lg:mt-10 mt-4">
-                    <h1 className="momo-trust-display-regular font-semibold lg:text-[16px] md:text-[11px] text-[9px]">
-                      Master IT School
-                    </h1>
+                  <h2 className="momo-trust-display-regular font-semibold text-[13px] sm:text-[15px] md:text-[16px]">
+                    Royal University of Phnom Penh (RUPP)
+                  </h2>
 
-                    <p className="text-gray-700 lg:text-[14px] md:text-[9px] text-[7px]">
-                      Modern Full Stack Web Developer
-                    </p>
+                  <p className="text-gray-700 text-[9px] sm:text-[11px] md:text-[13px] mt-1">
+                    Information Technology
+                  </p>
 
-                    <p className="text-gray-700 lg:text-[14px] md:text-[9px] text-[7px]">
-                      2025 - 2026
-                    </p>
-                  </div>
+                  <p className="text-gray-500 text-[8px] sm:text-[10px] md:text-[12px] mt-1">
+                    2025 – Present
+                  </p>
                 </div>
+
+              
+                <div className="relative pl-8">
+
+                  
+                  <div className="absolute left-0 top-1 w-3 h-3 rounded-full bg-black"></div>
+
+                  <h2 className="momo-trust-display-regular font-semibold text-[13px] sm:text-[15px] md:text-[16px]">
+                    Master IT School
+                  </h2>
+
+                  <p className="text-gray-700 text-[9px] sm:text-[11px] md:text-[13px] mt-1">
+                    Modern Full Stack Web Developer
+                  </p>
+
+                  <p className="text-gray-500 text-[8px] sm:text-[10px] md:text-[12px] mt-1">
+                    2025 – 2026
+                  </p>
+                </div>
+
               </div>
             </div>
 
-            <div className="flex lg:flex-col gap-6 lg:mt-0 md:mt-10">
-              <h1 className="lg:text-xl md:text-[15px] text-[13px] font-bold bungee-tint-regular">
+
+            <div>
+
+              <h1 className="text-xl md:text-2xl font-bold bungee-tint-regular mb-8">
                 Certification
               </h1>
 
-              <div className="flex lg:flex-row flex-col items-center gap-8">
-                <div className="lg:h-60 bg-gray-500 h-0.5 sm:w-60 w-30 lg:w-0.5"></div>
+              <div className="group">
 
-                <div>
+                <div className="border-3 border-gray-500 bg-white/10 rounded-xl p-3 overflow-hidden">
+
                   <img
-                    className="lg:h-60 lg:w-100 w-30 h-20 md:w-60 md:h-36 object-cover"
+                    className="
+                      w-full
+                      h-40
+                      sm:h-52
+                      md:h-60
+                      lg:h-64
+                      object-cover
+                      rounded-lg
+                      transition-transform
+                      duration-500
+                      group-hover:scale-[1.02]
+                    "
                     src="https://tse1.mm.bing.net/th/id/OIP.ExW3AwwO-qJV1um98HGxGgHaE8?r=0&pid=Api&h=220&P=0"
-                    alt=""
+                    alt="Certificate"
                   />
+
                 </div>
+
+                <div className="mt-4">
+                  <h2 className="momo-trust-display-regular font-semibold text-[12px] sm:text-[14px]">
+                    Full Stack Web Development
+                  </h2>
+
+                  <p className="text-gray-600 text-[9px] sm:text-[11px] mt-1">
+                    Master IT School · 2026
+                  </p>
+                </div>
+
               </div>
             </div>
+
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
