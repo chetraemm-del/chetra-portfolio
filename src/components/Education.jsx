@@ -1,39 +1,88 @@
+import React, { useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
 
-import React from "react";
+gsap.registerPlugin(ScrollTrigger);
 
 function Education() {
-  return (
-    <section className="bg-black min-h-screen py-24">
-      <div className="lg:mx-16.5 md:mx-12 sm:mx-10 mx-7">
+  const sectionRef = useRef(null);
 
-       
-        <div className="mb-8">
+  useGSAP(
+    () => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 75%",
+          end: "bottom 25%",
+          toggleActions: "play reverse play reverse",
+        },
+      });
+
+      tl.from(".education-header", {
+        y: 40,
+        opacity: 0,
+        duration: 0.7,
+        ease: "power3.out",
+      })
+        .from(
+          ".education-card",
+          {
+            y: 50,
+            opacity: 0,
+            duration: 0.8,
+            ease: "power3.out",
+          },
+          "-=0.4",
+        )
+        .from(".education-title", {
+  y: 30,
+  opacity: 0,
+  duration: 0.5,
+  ease: "power2.out",
+})
+.from(
+  ".education-item",
+  {
+    y: 30,
+    opacity: 0,
+    duration: 0.5,
+    stagger: 0.2,
+    ease: "power2.out",
+  },
+  "-=0.2"
+)
+    },
+    { scope: sectionRef },
+  );
+
+  return (
+    <section ref={sectionRef} className="bg-black min-h-screen py-24">
+      <div className="lg:mx-16.5 md:mx-12 sm:mx-10 mx-7">
+        <div className="education-header mb-8">
           <h1 className="mb-2 font-semibold momo-trust-display-regular text-[10px] sm:text-[13px] text-white">
             Where I’m building my foundation.
           </h1>
 
           <p className="momo-trust-display-regular text-[7px] sm:text-[10px] text-gray-600 leading-relaxed max-w-2xl">
             My academic journey has helped me develop a strong foundation in
-            technology, problem solving, and software development. I continue
-            to expand my knowledge through university studies and hands-on
+            technology, problem solving, and software development. I continue to
+            expand my knowledge through university studies and hands-on
             projects.
           </p>
         </div>
 
-        <div className="w-full bg-white/90 rounded-2xl p-7 sm:p-10 md:p-12 lg:p-14">
-
+        <div className="education-card w-full bg-white/90 rounded-2xl p-7 sm:p-10 md:p-12 lg:p-14">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
             <div>
-              <h1 className="text-xl md:text-2xl font-bold bungee-tint-regular mb-8">
-                Projects
-              </h1>
+             <h1 className="education-title text-xl md:text-2xl font-bold bungee-tint-regular mb-8">
+  Education
+</h1>
 
               <div className="relative">
-
                 <div className="absolute left-[5px] top-2 bottom-2 w-[2px] bg-gray-400"></div>
 
-                <div className="relative pl-8 mb-10">
-
+                <div className="education-item relative pl-8 mb-10">
                   <div className="absolute left-0 top-1 w-3 h-3 rounded-full bg-black"></div>
 
                   <h2 className="momo-trust-display-regular font-semibold text-[13px] sm:text-[15px] md:text-[16px]">
@@ -49,10 +98,7 @@ function Education() {
                   </p>
                 </div>
 
-              
-                <div className="relative pl-8">
-
-                  
+                <div className="education-item relative pl-8">
                   <div className="absolute left-0 top-1 w-3 h-3 rounded-full bg-black"></div>
 
                   <h2 className="momo-trust-display-regular font-semibold text-[13px] sm:text-[15px] md:text-[16px]">
@@ -67,38 +113,21 @@ function Education() {
                     2025 – 2026
                   </p>
                 </div>
-
               </div>
             </div>
 
-
-            <div>
-
+            <div className="certification">
               <h1 className="text-xl md:text-2xl font-bold bungee-tint-regular mb-8">
                 Certification
               </h1>
 
               <div className="group">
-
-                <div className="border-3 border-gray-500 bg-white/10 rounded-xl p-3 overflow-hidden">
-
+                <div className="bg-white border-gray-600 border-2 rounded-xl p-3 overflow-hidden">
                   <img
-                    className="
-                      w-full
-                      h-40
-                      sm:h-52
-                      md:h-60
-                      lg:h-64
-                      object-cover
-                      rounded-lg
-                      transition-transform
-                      duration-500
-                      group-hover:scale-[1.02]
-                    "
+                    className="w-full h-40 sm:h-52 md:h-60 lg:h-64 object-cover rounded-lg transition-transform duration-500 group-hover:scale-[1.02]"
                     src="https://tse1.mm.bing.net/th/id/OIP.ExW3AwwO-qJV1um98HGxGgHaE8?r=0&pid=Api&h=220&P=0"
                     alt="Certificate"
                   />
-
                 </div>
 
                 <div className="mt-4">
@@ -110,10 +139,8 @@ function Education() {
                     Master IT School · 2026
                   </p>
                 </div>
-
               </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -122,4 +149,3 @@ function Education() {
 }
 
 export default Education;
-
