@@ -140,7 +140,7 @@ function Hero() {
           </div>
           <div ref={contactRef} className="flex items-center gap-4 mt-6">
             <button className="border px-3 sm:px-4 py-1.5 sm:py-2 rounded-full roboto-condensed flex items-center gap-1.5 sm:gap-2 text-sm sm:text-base whitespace-nowrap transition-all duration-300 ease-out hover:-translate-y-0.5 active:scale-95 active:translate-y-0 hover:bg-black hover:text-white">
-              <FiMail /> Contact Me <FiArrowUpRight/>
+              <a className="flex items-center gap-1.5 sm:gap-2" href="#contact"><FiMail /> Contact Me <FiArrowUpRight/></a>
             </button>
           </div>
         </div>

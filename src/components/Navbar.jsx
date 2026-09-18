@@ -187,7 +187,7 @@ function Navbar() {
               <button
                 className={`border px-3 sm:px-4 py-1.5 sm:py-2 rounded-full roboto-condensed flex items-center gap-1.5 sm:gap-2 text-sm sm:text-base whitespace-nowrap transition-all duration-300 ease-out hover:-translate-y-0.5 active:scale-95 active:translate-y-0 ${currentScrolled > 0 ? "border-white text-white bg-black/60 backdrop-blur-md hover:bg-white hover:text-black hover:border-white" : "border-black text-black bg-transparent hover:bg-black hover:text-white hover:border-black"}`}
               >
-                <FiMail /> Contact Me
+                <a className="flex items-center gap-1.5 sm:gap-2" href="#contact"><FiMail /> Contact Me</a>
               </button>
             </div>
             <div ref={menuBtnRef} className="lg:hidden md:hidden ">

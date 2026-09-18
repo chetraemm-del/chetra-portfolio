@@ -8,6 +8,8 @@ import Project from "./components/Project";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import ProjectDetail from "./components/ProjectDetail";
 import Education from "./components/Education";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 const MainLayout = () => (
   <>
@@ -28,6 +30,10 @@ const MainLayout = () => (
       <section id="education">
         <Education />
       </section>
+      <section id="contact">
+        <Contact />
+      </section>
+      <Footer />
     </main>
   </>
 );

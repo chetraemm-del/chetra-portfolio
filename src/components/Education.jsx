@@ -57,7 +57,7 @@ function Education() {
   );
 
   return (
-    <section ref={sectionRef} className="bg-black min-h-screen py-24">
+    <section ref={sectionRef} className="bg-black min-h-screen pt-24">
       <div className="lg:mx-16.5 md:mx-12 sm:mx-10 mx-7">
         <div className="education-header mb-8">
           <h1 className="mb-2 font-semibold momo-trust-display-regular text-[10px] sm:text-[13px] text-white">
@@ -143,6 +143,17 @@ function Education() {
             </div>
           </div>
         </div>
+       <div className="flex justify-end mt-30">
+         <div className="education-header mb-8 ">
+          <h1 className="mb-2 font-semibold momo-trust-display-regular text-[10px] sm:text-[13px] text-white">
+            Learning today, building tomorrow.
+          </h1>
+
+          <p className="momo-trust-display-regular text-[7px] sm:text-[10px] text-gray-600 leading-relaxed max-w-2xl">
+            A dream is not what you see in your sleep; it is what doesn’t let you sleep.
+          </p>
+        </div>
+       </div>
       </div>
     </section>
   );
