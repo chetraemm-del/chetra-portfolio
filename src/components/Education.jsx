@@ -125,7 +125,7 @@ function Education() {
                 <div className="bg-white border-gray-600 border-2 rounded-xl p-3 overflow-hidden">
                   <img
                     className="w-full h-40 sm:h-52 md:h-60 lg:h-64 object-cover rounded-lg transition-transform duration-500 group-hover:scale-[1.02]"
-                    src="https://tse1.mm.bing.net/th/id/OIP.ExW3AwwO-qJV1um98HGxGgHaE8?r=0&pid=Api&h=220&P=0"
+                    src="img/certification1.jpg"
                     alt="Certificate"
                   />
                 </div>
