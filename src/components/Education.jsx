@@ -13,7 +13,7 @@ function Education() {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top 75%",
+          start: "top 95%",
           end: "bottom 25%",
           toggleActions: "play reverse play reverse",
         },
@@ -80,7 +80,7 @@ function Education() {
 </h1>
 
               <div className="relative">
-                <div className="absolute left-[5px] top-2 bottom-2 w-[2px] bg-gray-400"></div>
+                <div className="absolute left-1.25 top-2 bottom-2 w-[2px] bg-gray-400"></div>
 
                 <div className="education-item relative pl-8 mb-10">
                   <div className="absolute left-0 top-1 w-3 h-3 rounded-full bg-black"></div>
